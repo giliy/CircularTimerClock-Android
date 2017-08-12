@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandablePanel">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="collapsedHeight" format="dimension"/>
+        <attr name="animationDuration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularSlider">
+        <attr name="clock_time_interval" format="integer" />
+        <attr name="clock_tick_interval" format="integer" />
+        <attr name="start_hour" format="integer" />
+        <attr name="start_minutes" format="float" />
+        <attr name="end_hour" format="integer" />
+        <attr name="end_minutes" format="float" />
+        <attr name="start_time_is_am" format="boolean" />
+        <attr name="end_time_is_am" format="boolean" />
+        <attr name="is_clock_inside" format="boolean" />
+        <attr name="border_color" format="color" />
+        <attr name="end_thumb_image" format="reference" />
+        <attr name="start_thumb_image" format="reference" />
+        <attr name="clock_background_image" format="reference" />
+        <attr name="start_thumb_color" format="color" />
+        <attr name="end_thumb_color" format="color" />
+        <attr name="arc_color" format="color" />
+        <attr name="arc_dash_size" format="dimension" />
+        <attr name="arc_gradient_color_start" format="color" />
+        <attr name="arc_gradient_color_end" format="color" />
+        <attr name="clock_tick_color" format="color" />
+        <attr name="clock_hour_color" format="color" />
+        <attr name="hours_size" format="dimension" />
+        <attr name="border_thickness" format="dimension" />
+        <attr name="thumb_size" format="dimension" />
+        <attr name="start_thumb_size" format="dimension" />
+        <attr name="end_thumb_size" format="dimension" />
+    </declare-styleable>
+
+</resources>
