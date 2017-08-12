@@ -21,7 +21,7 @@ public class CircularTimerClock extends FrameLayout {
     private static final String AM = " AM";
     private static final String PM = " PM";
 
-    interface ontTimeChanged{
+    public interface ontTimeChanged{
         void onStartTimeChange(String time,int hour, int minutes, boolean isAM);
         void onEndTimeChange(String time,int hour, int minutes,boolean isAM);
     }
