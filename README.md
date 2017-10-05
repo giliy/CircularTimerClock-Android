@@ -7,29 +7,29 @@ Circular clock view that can set timer range between hours
 
 | Attr  | format | decription |
 | ------------- | ------------- | ------------- |
-| start_hour  | integer  | Content Cell  |
-| end_hour  | integer  | Content Cell  |
-| start_minutes  | integer  | Content Cell  |
-| end_minutes  | integer  | Content Cell  |
-| clock_time_interval  | integer  | Content Cell  |
-| clock_tick_interval  | integer  | Content Cell  |
-| clock_hour_color  | color  | Content Cell  |
-| clock_tick_color  | color  | Content Cell  |
-| border_color  | color  | Content Cell  |
-| arc_gradient_color_start  | color  | Content Cell  |
-| arc_gradient_color_end  | color  | Content Cell  |
-| start_thumb_color  | color  | Content Cell  |
-| end_thumb_color  | color  | Content Cell  |
-|  arc_color | color  | Content Cell  |
-|  start_thumb_size | dimention  | Content Cell  |
-|  end_thumb_size | dimention  | Content Cell  |
-| arc_dash_size  | dimention  | Content Cell  |
-| border_thickness  | dimention  | Content Cell  |
-| thumb_size  | dimention  | Content Cell  |
-| hours_size  | dimention  | Content Cell  |
-| start_time_is_am  | boolean  | Content Cell  |
-| end_time_is_am  | boolean  | Content Cell  |
-| is_clock_inside  | boolean  | Content Cell  |
-| start_thumb_image  | reference  | Content Cell  |
-| end_thumb_image  | reference  | Content Cell  |
-| clock_background_image  | reference  | Content Cell  |
+| start_hour  | integer  | An integer between 1 to 12  |
+| end_hour  | integer  | An integer between 1 to 12  |
+| start_minutes  | integer  | An integer between 0 to 59  |
+| end_minutes  | integer  | An integer between 0 to 59  |
+| clock_time_interval  | integer  | An integer between 0 to 59. The interval of the clock jump that time can be display|
+| clock_tick_interval  | integer  | An integer between 0 to 59. The clock tick interval of the clock |
+| clock_hour_color  | color  | The color of the hours clock  |
+| clock_tick_color  | color  | The color of the clock ticks  |
+| border_color  | color  | The color of the clock border  |
+| arc_gradient_color_start  | color  | The start arc color gradient  |
+| arc_gradient_color_end  | color  | the end color gradient  |
+| start_thumb_color  | color  | The color of the start thumb |
+| end_thumb_color  | color  | The color of the end thumb  |
+|  arc_color | color  | The arc color between start and end thumbs  |
+|  start_thumb_size | dimention  | The start thumb size  |
+|  end_thumb_size | dimention  | The end thumb size  |
+| arc_dash_size  | dimention  | The thickness of the line between the start and end  |
+| border_thickness  | dimention  | The thickness of the clock border  |
+| thumb_size  | dimention  | The size of the thumbs  |
+| hours_size  | dimention  | The size of the clock hours  |
+| start_time_is_am  | boolean  | Is the start time is AM  |
+| end_time_is_am  | boolean  | Is the end time is AM  |
+| is_clock_inside  | boolean  | Is the clock view insie  |
+| start_thumb_image  | reference  | the image drawable of the start thumb  |
+| end_thumb_image  | reference  | the image drawable of the end thumb  |
+| clock_background_image  | reference  | The image drawable of the backgound clock  |
