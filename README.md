@@ -1,5 +1,8 @@
 # CircularTimerClock-Android
-Circular clock view that can set timer range between hours
+Circular clock view that can set timer range between hours.
+CircularTimerClock is an android version based on the ios view of the build-in clock.
+With CircularTimeView you can set timer between hours and minutes. 
+Your can change the interval of of the clock between 1 minute to 60 minutes and retrieve current timer
 
 ![circular timer clock](https://user-images.githubusercontent.com/11720098/31091386-7882e1ca-a7b3-11e7-8677-43a6689954af.gif)
 
@@ -36,7 +39,7 @@ Circular clock view that can set timer range between hours
 
 # How to use
 
-Add remote maven url
+### Add root build.gradle
 ```
 repositories {
      maven {
@@ -45,7 +48,7 @@ repositories {
 }
 ```
 
-### Gradle
+### Add build.gradle
 ```
 dependencies {
     compile 'com.github.giliy:CircularTimerClock-Android:0.1.1'
@@ -53,7 +56,7 @@ dependencies {
 ```
 
 ### To use it in your code
-Simply add the View to your layout
+Simply add the View to your layout xml
 
 ```
  <giliy.com.circulartimerview.CircularTimerClock
