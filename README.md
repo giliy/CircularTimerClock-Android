@@ -59,34 +59,34 @@ dependencies {
 Simply add the View to your layout xml
 
 ```
- <giliy.com.circulartimerview.CircularTimerClock
-    android:layout_width="wrap_content"
-    android:id="@+id/circular_clock"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    timer:arc_dash_size="40dp"
-    timer:start_hour="5"
-    timer:start_minutes="20"
-    timer:end_hour="9"
-    timer:end_minutes="29"
-    timer:clock_time_interval="5"
-    timer:clock_tick_interval="15"
-    timer:clock_hour_color="#FFF"
-    timer:clock_tick_color="#000"
-    timer:hours_size="18sp"
-    timer:start_time_is_am="true"
-    timer:end_time_is_am="false"
-    timer:is_clock_inside="true"
-    timer:border_thickness="40dp"
-    timer:border_color="#e7e7e7"
-    timer:arc_gradient_color_start="#6ef4b1"
-    timer:arc_gradient_color_end="#00a351"
-    timer:start_thumb_image="@drawable/circle_toggle_shape"
-    timer:end_thumb_image="@drawable/circle_toggle_shape"
-    timer:clock_background_image="@drawable/sunrise"
-    timer:thumb_size="35dp" >
+ <giliy.com.circulartimerclock.CircularTimerClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circular_clock"
+        android:layout_gravity="center"
+        timer:arc_dash_size="40dp"
+        timer:start_hour="5"
+        timer:start_minutes="20"
+        timer:end_hour="9"
+        timer:end_minutes="30"
+        timer:clock_time_interval="5"
+        timer:clock_tick_interval="15"
+        timer:clock_hour_color="#FFF"
+        timer:clock_tick_color="#FFF"
+        timer:hours_size="18sp"
+        timer:start_time_is_am="true"
+        timer:end_time_is_am="false"
+        timer:is_clock_inside="true"
+        timer:border_thickness="40dp"
+        timer:border_color="#e7e7e7"
+        timer:arc_gradient_color_start="#78f8b8"
+        timer:arc_gradient_color_end="#00964b"
+        timer:clock_background_image="@drawable/sunrise"
+        timer:start_thumb_image="@drawable/circle_toggle_shape"
+        timer:end_thumb_image="@drawable/circle_toggle_shape"
+        timer:thumb_size="35dp" >
 
-</giliy.com.circulartimerview.CircularTimerClock>
+    </giliy.com.circulartimerclock.CircularTimerClock>
 ```
 To retrieve the time simply call the view from your activity like this
 ```java
