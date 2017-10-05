@@ -33,3 +33,71 @@ Circular clock view that can set timer range between hours
 | start_thumb_image  | reference  | the image drawable of the start thumb  |
 | end_thumb_image  | reference  | the image drawable of the end thumb  |
 | clock_background_image  | reference  | The image drawable of the backgound clock  |
+
+# How to use
+
+Add remote maven url
+```
+repositories {
+     maven {
+         url "https://jitpack.io"
+     }
+}
+```
+
+### Gradle
+```
+dependencies {
+    compile 'com.github.giliy:CircularTimerClock-Android:0.1.1'
+}
+```
+
+### To use it in your code
+Simply add the View to your layout
+
+```
+ <giliy.com.circulartimerview.CircularTimerClock
+    android:layout_width="wrap_content"
+    android:id="@+id/circular_clock"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    timer:arc_dash_size="40dp"
+    timer:start_hour="5"
+    timer:start_minutes="20"
+    timer:end_hour="9"
+    timer:end_minutes="29"
+    timer:clock_time_interval="5"
+    timer:clock_tick_interval="15"
+    timer:clock_hour_color="#FFF"
+    timer:clock_tick_color="#000"
+    timer:hours_size="18sp"
+    timer:start_time_is_am="true"
+    timer:end_time_is_am="false"
+    timer:is_clock_inside="true"
+    timer:border_thickness="40dp"
+    timer:border_color="#e7e7e7"
+    timer:arc_gradient_color_start="#6ef4b1"
+    timer:arc_gradient_color_end="#00a351"
+    timer:start_thumb_image="@drawable/circle_toggle_shape"
+    timer:end_thumb_image="@drawable/circle_toggle_shape"
+    timer:clock_background_image="@drawable/sunrise"
+    timer:thumb_size="35dp" >
+
+</giliy.com.circulartimerview.CircularTimerClock>
+```
+To retrieve the time simply call the view from your activity like this
+```java
+CircularTimerClock clock = (CircularTimerClock) findViewById(R.id.circular_clock);
+        clock.setOnTimeChangedListener(new CircularTimerClock.ontTimeChanged() {
+            @Override
+            public void onStartTimeChange(String time, int hour, int minutes,boolean isAM) {
+                Log.d("time: ",""+time);
+
+            }
+
+            @Override
+            public void onEndTimeChange(String time, int hour, int minutes, boolean isAM) {
+                Log.d("time: ",""+time);
+            }
+        });
+```
